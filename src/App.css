@@ -1,3 +1,8 @@
+body{
+  background-image:url('https://img.freepik.com/free-vector/abstract-white-shapes-background_79603-1362.jpg?t=st=1743793485~exp=1743797085~hmac=37e2296083e259883a611e67a2dccef6b7d8fa566fc94f36e075dd83d0bc515e&w=1380');
+  background-repeat:no-repeat;
+  background-size:cover;
+}
 .main{
   display:flex;
   justify-content: space-around;
@@ -22,6 +27,7 @@ h1{
  overflow:auto;
  margin-bottom: 15px;
  outline: none;
+ background:silver;
 }
 #btn{
   width:fit-content;
@@ -44,14 +50,34 @@ h1{
    column-gap: 15px;
 }
 .fnt-color{
+  display:flex;
+  flex-direction:column;
   border:2px double mediumorchid;
   padding:5px 15px 15px 15px;
   border-radius:12px;
+  width:85%;
+  box-shadow:0px 0px 4px gold,0px 0px 5px maroon;
+  transition:600ms;
+  justify-content:center;
+  align-items:center;
+}
+.fnt-color:hover{
+  transform:scale(1.02);
 }
 .bg-color{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
   border:2px double mediumorchid;
   padding:5px 15px 15px 15px;
   border-radius:12px;
+  width:85%;
+  box-shadow:0px 0px 4px gold,0px 0px 5px maroon;
+  transition:600ms;
+}
+.bg-color:hover{
+  transform:scale(1.02);
 }
 h3{
   color:red;
@@ -103,19 +129,62 @@ h3{
   border: none;
   border-radius: 40%;
 }
+#maroon{
+  width:50px;
+  height:50px;
+  background:maroon;
+  cursor:pointer;
+  outline: none;
+  border: none;
+  border-radius: 40%;
+}
+#pink{
+  width:50px;
+  height:50px;
+  background:pink;
+  cursor:pointer;
+  outline: none;
+  border: none;
+  border-radius: 40%;
+}
+#orange{
+  width:50px;
+  height:50px;
+  background:orange;
+  cursor:pointer;
+  outline: none;
+  border: none;
+  border-radius: 40%;
+}
+#aqua{
+  width:50px;
+  height:50px;
+  background:aqua;
+  cursor:pointer;
+  outline: none;
+  border: none;
+  border-radius: 40%;
+}
 .colors{
   display:flex;
-  column-gap:5px;
+  column-gap:10px;
+  row-gap: 15px;
+  flex-wrap: wrap;
 }
 .bgcolors{
   display:flex;
-  column-gap:5px;
+  column-gap:10px;
+  row-gap: 15px;
+  flex-wrap: wrap;
 }
 .parent2{
   display:flex;
   flex-direction: column;
   row-gap:20px;
   column-gap: 10px;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
 }
 #algerian{
   font-family: algerian;
@@ -154,4 +223,65 @@ h3{
   border:2px double mediumorchid;
   padding:15px;
   border-radius: 12px;
+  flex-direction:row;
+  row-gap:15px;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  width:85%;
+  transition:600ms;
+  box-shadow:0px 0px 4px gold,0px 0px 5px maroon; 
+}
+.fonts button{
+  background: pink;
+  color:blueviolet;
+  outline: none;
+  border:1px dashed blue;
+}
+.fonts:hover{
+  transform:scale(1.02);
+}
+.fonts input{
+  background: rgb(254, 161, 177);
+  font-size: 18px;
+  color:black;
+  border-radius: 6px;
+  padding:4px 0px 4px 6px;
+}
+.fonts input::placeholder{
+  color:red;
+  text-align:center;
+}
+.imgs{
+ display:flex;
+ flex-direction:row;
+ justify-content:center;
+ align-items:center;
+ column-gap:10px;
+ row-gap:15px;
+ flex-wrap:wrap;
+ width:85%;
+ border:2px double mediumorchid;
+ padding:20px;
+ border-radius:12px;
+ box-shadow:0px 0px 4px gold,0px 0px 5px maroon;
+ transition:600ms;
+}
+.imgs:hover{
+  transform:scale(1.02);
+}
+.imgs img{
+  width:70px;
+  height:70px;
+}
+.imgs input{
+  background: rgb(254, 161, 177);
+  font-size:16px;
+  color:black;
+  border-radius: 6px;
+  width:230px;
+  height:30px;
+}
+.imgs input::placeholder{
+  color:red;
 }
