@@ -18,9 +18,9 @@ function App(){
     document.querySelector('span').style.fontFamily=font;
   }
   const downloadImg=()=>{
-    Screenshot(document.getElementById('btn')).then(canvas=>{
+    Screenshot(document.getElementById('heading')).then(canvas=>{
       const imgs=canvas.toDataURL('image/png');
-      const link=canvas.createElement('a');
+      const link=document.createElement('a');
       link.href=imgs;
       link.download='Classy-Fonts.png';
       link.click();

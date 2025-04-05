@@ -2,6 +2,7 @@ body{
   background-image:url('https://img.freepik.com/free-vector/abstract-white-shapes-background_79603-1362.jpg?t=st=1743793485~exp=1743797085~hmac=37e2296083e259883a611e67a2dccef6b7d8fa566fc94f36e075dd83d0bc515e&w=1380');
   background-repeat:no-repeat;
   background-size:cover;
+  background-position: center;
 }
 .main{
   display:flex;
@@ -11,8 +12,9 @@ body{
   align-items: center;
 }
 h1{
-  color:red;
+  color:white;
   text-align: center;
+  text-shadow: 2px 2px 4px black,4px 4px 6px blue,5px 4px 6px darkblue;
 }
 #heading{
   display: flex;
@@ -28,6 +30,8 @@ h1{
  margin-bottom: 15px;
  outline: none;
  background:silver;
+ background-size:cover;
+ background-position: center;
 }
 #btn{
   width:fit-content;
